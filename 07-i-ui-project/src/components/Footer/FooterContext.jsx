@@ -1,14 +1,22 @@
-import React from 'react'
+import React from "react";
 
-const FooterContext = () => {
+const FooterContext = (props) => {
   return (
-    <div className='w-80  text-center'>
-      
-      <h5 className='text-2xl mb-2'>Social media</h5>
-      <hr className='mb-4'/>
-      <a href="" className='mt-10'>Instagram</a>
-    </div>
-  )
-}
+    <div className=" text-center flex gap-10 flex-nowrap">
+      {props.footerItems.map((item, index) => (
+        <div key={index}>
+          <h5 className="text-2xl mb-2">{item.name}</h5>
+          <hr className="mb-4" />
 
-export default FooterContext
+          {item.items.map((subItem, idx) => (
+            <a href='' key={idx} className="block mt-2">
+              {subItem}
+            </a>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default FooterContext;

@@ -1,10 +1,12 @@
 import React from 'react'
 import FooterContext from './FooterContext'
 
-const FooterRight = () => {
+const FooterRight = (props) => {
+
+
   return (
-    <div className='w-3/4'>
-      <FooterContext/>
+    <div className='w-2/3'>
+      <FooterContext footerItems={props.footerItems}/>
     </div>
   )
 }

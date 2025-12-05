@@ -46,6 +46,32 @@ const App = () => {
       name : 'Apple',
     },
   ]
+   const footerItems =  [
+    {
+      name : 'Social Media',
+      items : ['instagram','linkedin' , 'website' , 'Facebook' , 'Instagram']
+    },
+    {
+      name : 'Company',
+      items : ['AboutUs','Service' , 'Community' , 'Testimonial' ]
+    },
+    {
+      name : 'Support',
+      items : ['Help Center','Tweet @ us' , 'Webians' , 'Feedback' ]
+    },
+     {
+      name : 'Social Media',
+      items : ['instagram','linkedin' , 'website' , 'Facebook' , 'Instagram']
+    },
+    {
+      name : 'Company',
+      items : ['AboutUs','Service' , 'Community' , 'Testimonial' ]
+    },
+    {
+      name : 'Support',
+      items : ['Help Center','Tweet @ us' , 'Webians' , 'Feedback' ]
+    },
+  ]
 
 
   return (
@@ -54,7 +80,7 @@ const App = () => {
       <Section2 company = {company}/>
       <Section3/>
       <hr />
-      <Footer/>
+      <Footer footerItems = {footerItems}/>
       <hr  className='mb-5'/>
       <BottomFooter/>
     </div>
